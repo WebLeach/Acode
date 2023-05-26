@@ -10,12 +10,14 @@ import Ref from 'html-tag-js/ref';
  */
 export const Row1 = ({ extras, shift, ctrl, save }) => <div id='row1' className='button-container'>
   <div className='section'>
+    <RowItem icon='keyboard_control' action='pallate' />
     <RowItem ref={ctrl} icon='letters' action='ctrl' letters='ctrl' />
     <RowItem icon='keyboard_tab' action='key' value={9} />
     <RowItem ref={shift} icon='letters' action='shift' letters='shft' />
     <RowItem icon='undo' action='command' value='undo' />
     <RowItem icon='redo' action='command' value='redo' />
     <RowItem icon='search' action='search' />
+    <RowItem icon='subdirectory_arrow_left' action='goto' />
     <RowItem ref={save} icon='save' action='command' value='saveFile' />
     <RowItem icon='letters' action='key' value={27} letters='esc' />
   </div>

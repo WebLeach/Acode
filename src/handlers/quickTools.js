@@ -124,6 +124,12 @@ export default function actions(action, value) {
     }
 
     
+    case 'pallete':
+      commandPallete();
+      break;
+
+
+    
     case 'tab':
       $textarea.dispatchEvent(
         window.createKeyboardEvent('keydown', {
