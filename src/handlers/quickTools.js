@@ -123,6 +123,37 @@ export default function actions(action, value) {
       return true;
     }
 
+    
+    case 'tab':
+      $textarea.dispatchEvent(
+        window.createKeyboardEvent('keydown', {
+          key: 9,
+          keyCode: 9,
+          shiftKey: $shiftKey.dataset.state === 'on',
+        }),
+      );
+      break;
+
+
+    case 'goto':
+      acode.exec('goto');
+      break;
+
+
+    
+    case 'undo':
+      editor.undo(true);
+      break;
+
+    case 'redo':
+      editor.redo(true);
+      break;
+  
+
+    case 'save':
+      acode.exec('save');
+      break;
+
     case 'search':
       toggleSearch();
       return actionStack.has('search-bar');
