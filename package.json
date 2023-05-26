@@ -36,7 +36,9 @@
       "cordova-plugin-ftp": {},
       "cordova-plugin-sdcard": {}
     },
-    "platforms": []
+    "platforms": [
+      "android"
+    ]
   },
   "repository": {
     "type": "git",
@@ -60,7 +62,7 @@
     "@types/url-parse": "^1.4.8",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
-    "cordova-android": "^12.0.0",
+    "cordova-android": "^10.1.2",
     "cordova-clipboard": "^1.3.0",
     "cordova-plugin-buildinfo": "^4.0.0",
     "cordova-plugin-device": "^2.0.3",
