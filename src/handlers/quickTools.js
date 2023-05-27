@@ -2,6 +2,7 @@ import appSettings from 'lib/settings';
 import quickTools from 'components/quickTools';
 import createKeyboardEvent from 'utils/keyboardEvent';
 import searchSettings from 'settings/searchSettings';
+import commandPallete from '../components/commandPallete';
 
 /**@type {HTMLInputElement | HTMLTextAreaElement} */
 let input;
